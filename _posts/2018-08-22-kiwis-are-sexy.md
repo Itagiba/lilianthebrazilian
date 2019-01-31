@@ -1,8 +1,11 @@
 ---
+title: Kiwis Are Sexy
+date: 2018-08-22 00:00:00 Z
 layout: post
 author: Ted
 image: uploads/testsketch.jpg
 ---
+
 ## Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible berry of several species of woody vines in the genus Actinidia.
 
 The most common cultivar group of kiwifruit is oval, about the size of a large

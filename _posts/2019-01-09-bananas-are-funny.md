@@ -1,7 +1,9 @@
 ---
+title: Bananas Are Funny
+date: 2019-01-09 00:00:00 Z
 author: Janet
-
 ---
+
 ## A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.
 
 ## My bananas have changed a lot

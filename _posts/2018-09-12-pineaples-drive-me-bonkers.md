@@ -1,6 +1,7 @@
 ---
-author : Ted
-title:  "Welcome to Jekyll!"
+title: Welcome to Jekyll!
+date: 2018-09-12 00:00:00 Z
+author: Ted
 ---
 
 Welcome small people, I have no time for you
