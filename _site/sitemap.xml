@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/lilianthebrazilian/authors/bob</loc>
-<lastmod>2019-01-31T18:38:54-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/lilianthebrazilian/authors/janet</loc>
-<lastmod>2019-01-31T18:38:54-05:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/lilianthebrazilian/authors/ted</loc>
-<lastmod>2019-01-31T18:38:54-05:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/lilianthebrazilian/2016-08-20-2016-8-20-etiam</loc>
 <lastmod>2016-08-19T20:00:00-04:00</lastmod>
 </url>
@@ -91,8 +79,5 @@
 </url>
 <url>
 <loc>http://localhost:4000/lilianthebrazilian/landing</loc>
-</url>
-<url>
-<loc>http://localhost:4000/lilianthebrazilian/writers</loc>
 </url>
 </urlset>
