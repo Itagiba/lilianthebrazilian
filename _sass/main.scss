@@ -12,7 +12,7 @@
 */
 
 
-	@include font-face("Cabin Sketch", assets/fonts/CabinSketch, bold, regular, ttf);
+	@include font-face("Cabin Sketch", fonts/CabinSketch, bold, regular, ttf);
 
 	@include skel-breakpoints((
 		xlarge: '(max-width: 1680px)',
