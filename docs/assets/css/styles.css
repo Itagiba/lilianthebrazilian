@@ -2854,11 +2854,11 @@ body.is-menu-visible #menu {
     opacity: 1;
     visibility: visible; }
 
-h1, h2, h3, h3, .titles, .actions a {
+h1, .titles, .actions a {
   font-family: 'Cabin Sketch', cursive; }
 
-h1, h2, h3 {
-  font-weight: bold; }
+h2, h3 {
+  font-family: 'Aldrich', sans-serif; }
 
 #banner {
   background-image: url(https://res.cloudinary.com/cheekybrazilian/image/upload/v1549141443/maverick-ux/header.jpg); }
