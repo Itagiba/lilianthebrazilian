@@ -26,3 +26,24 @@ h2, h3{
   color:red;
   font-weight: 700;
 }
+
+
+//markdown styles
+
+.intext-list{
+  padding:0;
+  columns: 3 auto;
+  border:1px solid red;
+  column-gap: auto;
+  list-style-type: none;
+  justify-content: space-between;
+
+  li{
+    padding-left:0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+}

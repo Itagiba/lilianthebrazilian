@@ -2867,3 +2867,15 @@ h2, h3 {
   font-size: 4em;
   color: red;
   font-weight: 700; }
+
+.intext-list {
+  padding: 0;
+  columns: 3 auto;
+  border: 1px solid red;
+  column-gap: auto;
+  list-style-type: none;
+  justify-content: space-between; }
+  .intext-list li {
+    padding-left: 0; }
+  .intext-list img {
+    max-width: 100%; }
