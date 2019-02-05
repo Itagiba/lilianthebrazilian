@@ -2862,3 +2862,8 @@ h2, h3 {
 
 #banner {
   background-image: url(https://res.cloudinary.com/cheekybrazilian/image/upload/v1549141443/maverick-ux/header.jpg); }
+
+.fake-h2 {
+  font-size: 4em;
+  color: red;
+  font-weight: 700; }
