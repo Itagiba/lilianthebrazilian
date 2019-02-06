@@ -2872,10 +2872,20 @@ h2, h3 {
   padding: 0;
   columns: 3 auto;
   border: 1px solid red;
-  column-gap: auto;
   list-style-type: none;
-  justify-content: space-between; }
+  justify-content: space-around; }
   .intext-list li {
-    padding-left: 0; }
+    padding-left: 0;
+    display: block; }
   .intext-list img {
     max-width: 100%; }
+  @media screen and (max-width: 980px) {
+    .intext-list {
+      columns: 2;
+      border-color: green; } }
+  @media screen and (max-width: 736px) {
+    .intext-list {
+      columns: 1;
+      border-color: pink; }
+      .intext-list img {
+        min-width: 100%; } }

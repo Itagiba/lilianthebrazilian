@@ -34,16 +34,32 @@ h2, h3{
   padding:0;
   columns: 3 auto;
   border:1px solid red;
-  column-gap: auto;
   list-style-type: none;
-  justify-content: space-between;
+  justify-content:space-around;
 
   li{
     padding-left:0;
+    display:block;
   }
 
   img {
     max-width: 100%;
   }
 
+  @include breakpoint(medium) {
+    columns:2;
+    border-color:green;
+
+
+  }
+
+  @include breakpoint(small) {
+    columns:1;
+    border-color:pink;
+
+    img{
+      min-width:100%;
+    }
+
+  }
 }
