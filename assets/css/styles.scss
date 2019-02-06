@@ -33,9 +33,12 @@ h2, h3{
 .intext-list{
   padding:0;
   columns: 3 auto;
-  border:1px solid red;
+  border-bottom:1px solid red;
   list-style-type: none;
   justify-content:space-around;
+
+  border-bottom:1px solid red;
+  padding-bottom:4em;
 
   li{
     padding-left:0;

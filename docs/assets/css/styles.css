@@ -2871,9 +2871,11 @@ h2, h3 {
 .intext-list {
   padding: 0;
   columns: 3 auto;
-  border: 1px solid red;
+  border-bottom: 1px solid red;
   list-style-type: none;
-  justify-content: space-around; }
+  justify-content: space-around;
+  border-bottom: 1px solid red;
+  padding-bottom: 4em; }
   .intext-list li {
     padding-left: 0;
     display: block; }

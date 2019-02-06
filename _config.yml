@@ -12,13 +12,13 @@ permalink: "/:path"
 
 # Collections
 collections:
-  authors:
-    output: true
   posts:
     output: true
-  projects:
+  work:
     output: true
-    permalink: "/projects/:path/"
+    permalink: "/work/:path/"
+  projects:
+    output: false
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
@@ -27,6 +27,7 @@ tiles-count: 6
 
 # image bank
 image-path: "https://res.cloudinary.com/cheekybrazilian/image/upload/v1548967311/maverick-ux"
+portfolio-path: "https://res.cloudinary.com/cheekybrazilian/image/upload/v1549398214/maverick-ux/portfolio/newsgenie/"
 
 defaults:
   - scope:

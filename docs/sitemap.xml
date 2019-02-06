@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/lilianthebrazilian/2016-08-20-2016-8-20-etiam</loc>
+<loc>http://localhost:4000/lilianthebrazilian/2019-02-6-TEST</loc>
 <lastmod>2016-08-19T20:00:00-04:00</lastmod>
 </url>
 <url>
@@ -55,6 +55,18 @@
 <url>
 <loc>http://localhost:4000/lilianthebrazilian/2019-01-31-kumkwat</loc>
 <lastmod>2019-01-31T02:55:12-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/lilianthebrazilian/projects/newsgenie-01/</loc>
+<lastmod>2019-02-06T16:20:47-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/lilianthebrazilian/projects/newsgenie-02/</loc>
+<lastmod>2019-02-06T16:20:47-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/lilianthebrazilian/projects/newsgenie-03/</loc>
+<lastmod>2019-02-06T16:20:47-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/lilianthebrazilian/404</loc>
