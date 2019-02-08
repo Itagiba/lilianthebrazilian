@@ -3,15 +3,15 @@
   description: Welcome Screen for prototype
   type: image
   path: 01-welcome.png
-  section: work
+  project: newsgenie
 - title: Landing Page
   description: Second screen of media prototype
   link:
   type: image
   path: 02-landing.png
-  section: work
+  project: newsgenie
 - title: Big Landing
   link:
   type: image
   path: 03-largeheadline.png
-  section: work
+  project: newsgenie
