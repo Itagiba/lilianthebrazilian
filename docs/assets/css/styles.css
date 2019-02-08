@@ -2868,7 +2868,7 @@ h2, h3 {
   color: red;
   font-weight: 700; }
 
-.intext-list {
+.medialist {
   padding: 0;
   columns: 3 auto;
   border-bottom: 1px solid red;
@@ -2876,18 +2876,18 @@ h2, h3 {
   justify-content: space-around;
   border-bottom: 1px solid red;
   padding-bottom: 4em; }
-  .intext-list li {
+  .medialist li {
     padding-left: 0;
     display: block; }
-  .intext-list img {
+  .medialist img {
     max-width: 100%; }
   @media screen and (max-width: 980px) {
-    .intext-list {
+    .medialist {
       columns: 2;
       border-color: green; } }
   @media screen and (max-width: 736px) {
-    .intext-list {
+    .medialist {
       columns: 1;
       border-color: pink; }
-      .intext-list img {
+      .medialist img {
         min-width: 100%; } }

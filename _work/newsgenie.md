@@ -2,7 +2,6 @@
 name: newsgenie
 date: 2016-08-01
 type: prototype
-layout: work
 description: This was a cool news application
 image: assets/images/pic06.jpg
 ---
