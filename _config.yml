@@ -44,6 +44,10 @@ defaults:
       path: ""
     values:
       layout: page
+  - scope:
+      path: "/work"
+    values:
+      layout: work
 
 
 
