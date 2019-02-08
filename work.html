@@ -16,7 +16,7 @@ layout:default
       {% for media in filtered_media %}
         {% if media.mediafiles != 404 %}
         <ul>
-            {% if project.path %}<li><img src="{{ site.baseurl }}/{{ site.portfolio-path}}/ {{ project.path }}" alt="{{project.title}}" /></li>{% endif %}
+            {% if media.path %}<li><img src="{{ site.portfolio-path}}/{{ media.path }}" alt="{{media.title}}" /></li>{% endif %}
         </ul>
         {% endif %}
     {% endfor %}
