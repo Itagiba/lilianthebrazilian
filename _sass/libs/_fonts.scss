@@ -11,6 +11,7 @@
 $font-path: "../fonts/" !default;
 
 
+
 /**
  * A list of the project's font faces along with
  * thier associated variants
@@ -21,13 +22,17 @@ $font-path: "../fonts/" !default;
  * declarations
  */
 $font-faces: (
- 'CabinSketch': (
-    "CabinSketch-Regular" normal normal,
-    "CabinSketch-Bold" bold normal
+ 'Cabin Sketch ': (
+    "CabinSketch/CabinSketch-Regular" normal normal,
+    "CabinSketch/CabinSketch-Bold" bold normal
   ),
  'Tenor Sans': (
-    "TenorSans-Regular" normal normal,
-  )
+    "Tenor_Sans/TenorSans-Regular" normal normal,
+  ),
+  'Aldrich': (
+     "Aldrich/Aldrich-Regular" normal normal,
+   ),
+
 ) !default;
 
 

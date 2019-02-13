@@ -41,21 +41,27 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 @font-face {
-  font-family: "CabinSketch";
-  src: url("../fonts/CabinSketch-Regular.eot");
-  src: url("../fonts/CabinSketch-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/CabinSketch-Regular.woff") format("woff"), url("../fonts/CabinSketch-Regular.ttf") format("truetype"), url("../fonts/CabinSketch-Regular.svgCabinSketch") format("svg");
+  font-family: "Cabin Sketch ";
+  src: url("../fonts/CabinSketch/CabinSketch-Regular.eot");
+  src: url("../fonts/CabinSketch/CabinSketch-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/CabinSketch/CabinSketch-Regular.woff") format("woff"), url("../fonts/CabinSketch/CabinSketch-Regular.ttf") format("truetype"), url("../fonts/CabinSketch/CabinSketch-Regular.svgCabin Sketch ") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "CabinSketch";
-  src: url("../fonts/CabinSketch-Bold.eot");
-  src: url("../fonts/CabinSketch-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CabinSketch-Bold.woff") format("woff"), url("../fonts/CabinSketch-Bold.ttf") format("truetype"), url("../fonts/CabinSketch-Bold.svgCabinSketch") format("svg");
+  font-family: "Cabin Sketch ";
+  src: url("../fonts/CabinSketch/CabinSketch-Bold.eot");
+  src: url("../fonts/CabinSketch/CabinSketch-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CabinSketch/CabinSketch-Bold.woff") format("woff"), url("../fonts/CabinSketch/CabinSketch-Bold.ttf") format("truetype"), url("../fonts/CabinSketch/CabinSketch-Bold.svgCabin Sketch ") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "Tenor Sans";
-  src: url("../fonts/TenorSans-Regular.eot");
-  src: url("../fonts/TenorSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TenorSans-Regular.woff") format("woff"), url("../fonts/TenorSans-Regular.ttf") format("truetype"), url("../fonts/TenorSans-Regular.svgTenor Sans") format("svg");
+  src: url("../fonts/Tenor_Sans/TenorSans-Regular.eot");
+  src: url("../fonts/Tenor_Sans/TenorSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Tenor_Sans/TenorSans-Regular.woff") format("woff"), url("../fonts/Tenor_Sans/TenorSans-Regular.ttf") format("truetype"), url("../fonts/Tenor_Sans/TenorSans-Regular.svgTenor Sans") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Aldrich";
+  src: url("../fonts/Aldrich/Aldrich-Regular.eot");
+  src: url("../fonts/Aldrich/Aldrich-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Aldrich/Aldrich-Regular.woff") format("woff"), url("../fonts/Aldrich/Aldrich-Regular.ttf") format("truetype"), url("../fonts/Aldrich/Aldrich-Regular.svgAldrich") format("svg");
   font-weight: normal;
   font-style: normal; }
 /*
@@ -63,6 +69,8 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+/*@include font-face('Aldrich', '../fonts/Aldrich/', 'Aldrich-Regular', regular, regular);
+@include font-face('Tenor Sans', '../fonts/Tenor_Sans', 'TenorSans-Regular', regular, regular);*/
 /* Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -2909,7 +2917,7 @@ body.is-menu-visible #menu {
 
 h1, .titles, .actions a {
   font-family: 'Cabin Sketch', cursive;
-  font-weight: bold; }
+  font-weight: normal; }
 
 h2, h3 {
   font-family: 'Aldrich', sans-serif; }
