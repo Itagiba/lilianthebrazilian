@@ -15,3 +15,8 @@
   type: image
   path: 03-largeheadline.png
   project: newsgenie
+- title: Synergy Dashboard
+  link:
+  type: image
+  path: s_w-002-dashboard.svg
+  project: synergy
