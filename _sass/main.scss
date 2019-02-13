@@ -1,6 +1,7 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
+@import 'libs/fonts';
 @import 'libs/skel';
 @import 'font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic');
@@ -12,7 +13,7 @@
 */
 
 
-	@include font-face("Cabin Sketch", fonts/CabinSketch, bold, regular, ttf);
+	//@include font-face("Cabin Sketch", '../fonts/CabinSketch');
 
 	@include skel-breakpoints((
 		xlarge: '(max-width: 1680px)',

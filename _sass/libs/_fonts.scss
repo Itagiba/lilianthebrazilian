@@ -1,0 +1,84 @@
+
+// =============================================================================
+// Font Face
+// =============================================================================
+/**
+ * The path to the fonts folder, relative to the
+ * compiled stylesheet
+ *
+ * @type String
+ */
+$font-path: "../fonts/" !default;
+
+
+/**
+ * A list of the project's font faces along with
+ * thier associated variants
+ *
+ * @type List
+ * Note: The format of this list is important.
+ * Do not miss the trailing comma for single line
+ * declarations
+ */
+$font-faces: (
+ 'CabinSketch': (
+    "CabinSketch-Regular" normal normal,
+    "CabinSketch-Bold" bold normal
+  ),
+ 'Tenor Sans': (
+    "TenorSans-Regular" normal normal,
+  )
+) !default;
+
+
+/**
+ * Generates a complete font face declarations
+ * where invoked
+ *
+ * @type mixin
+ *
+ * @param $font-family The with which the font family will be called
+ * @param $font-path   The path to the fonts directory relative to the compiled stylesheet
+ * @param $font-file   The name of the actual font file
+ * @param $font-weight The font weight (normal, bold, lighter)
+ * @param $font-weight The font style (normal, italic)
+ *
+ * Example Usage:
+ * @include font-face('Open Sans', '../fonts/', 'OpenSans-regular-webfont', bold, italic)
+ */
+@mixin font-face($font-family, $font-path, $font-file, $font-weight: normal, $font-style: normal ) {
+  @font-face {
+    font-family: $font-family;
+    src: url(  $font-path + $font-file + '.eot' );
+    src: url( $font-path + $font-file + '.eot?#iefix') format('embedded-opentype'),
+    url( $font-path + $font-file + '.woff') format('woff'),
+    url( $font-path + $font-file + '.ttf') format('truetype'),
+    url( $font-path + $font-file + '.svg#{$font-family}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+/**
+ * A loop to run through each font family
+ * and print the font face declarations of each
+ * variant
+ *
+ * Dependencies
+ * variable - $font-path
+ * list     - $font-faces
+ * mixin    - font-face
+ */
+@each $font in $font-faces {
+  $font-family: quote( #{nth($font, 1)} );
+  $font-variants: nth($font, 2);
+
+  @each $variant in $font-variants {
+    $font-path: $font-path !global;
+    $font-file: nth($variant, 1);
+    $font-weight: nth($variant, 2);
+    $font-style: nth($variant, 3);
+
+    @include font-face($font-family, $font-path, $font-file, $font-weight: normal, $font-style: normal )
+  }
+}

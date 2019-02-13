@@ -1,15 +1,68 @@
+/**
+ * The path to the fonts folder, relative to the
+ * compiled stylesheet
+ *
+ * @type String
+ */
+/**
+ * A list of the project's font faces along with
+ * thier associated variants
+ *
+ * @type List
+ * Note: The format of this list is important.
+ * Do not miss the trailing comma for single line
+ * declarations
+ */
+/**
+ * Generates a complete font face declarations
+ * where invoked
+ *
+ * @type mixin
+ *
+ * @param $font-family The with which the font family will be called
+ * @param $font-path   The path to the fonts directory relative to the compiled stylesheet
+ * @param $font-file   The name of the actual font file
+ * @param $font-weight The font weight (normal, bold, lighter)
+ * @param $font-weight The font style (normal, italic)
+ *
+ * Example Usage:
+ * @include font-face('Open Sans', '../fonts/', 'OpenSans-regular-webfont', bold, italic)
+ */
+/**
+ * A loop to run through each font family
+ * and print the font face declarations of each
+ * variant
+ *
+ * Dependencies
+ * variable - $font-path
+ * list     - $font-faces
+ * mixin    - font-face
+ */
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+@font-face {
+  font-family: "CabinSketch";
+  src: url("../fonts/CabinSketch-Regular.eot");
+  src: url("../fonts/CabinSketch-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/CabinSketch-Regular.woff") format("woff"), url("../fonts/CabinSketch-Regular.ttf") format("truetype"), url("../fonts/CabinSketch-Regular.svgCabinSketch") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "CabinSketch";
+  src: url("../fonts/CabinSketch-Bold.eot");
+  src: url("../fonts/CabinSketch-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CabinSketch-Bold.woff") format("woff"), url("../fonts/CabinSketch-Bold.ttf") format("truetype"), url("../fonts/CabinSketch-Bold.svgCabinSketch") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Tenor Sans";
+  src: url("../fonts/TenorSans-Regular.eot");
+  src: url("../fonts/TenorSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TenorSans-Regular.woff") format("woff"), url("../fonts/TenorSans-Regular.ttf") format("truetype"), url("../fonts/TenorSans-Regular.svgTenor Sans") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /*
 	Forty by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-@font-face {
-  font-family: "Cabin Sketch";
-  font-style: regular;
-  font-weight: bold;
-  src: url("fonts/CabinSketch.ttf") format("truetype"); }
 /* Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -2855,7 +2908,8 @@ body.is-menu-visible #menu {
     visibility: visible; }
 
 h1, .titles, .actions a {
-  font-family: 'Cabin Sketch', cursive; }
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: bold; }
 
 h2, h3 {
   font-family: 'Aldrich', sans-serif; }

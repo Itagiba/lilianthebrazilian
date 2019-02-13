@@ -11,34 +11,36 @@
 <body>
 
     {% include header.html %}
+    <div id="main" class="alt">
+      	<div class="inner">
 
-    {{ content }}
-    <h2>{{work.title}}</h2>
+        {{ content }}
 
-      {% for project in site.work %}
+        {% for project in site.work %}
 
-      <div class="project">
-          <h2>{{ project.name }}</h2>
-          <h3>{{ project.type }}</h3>
-          <h5>{{ project.description }}</h5>
-          {{ project.content }}
-        <!--match images-->
-        {% assign filtered_media = site.data.mediafiles | where:"project", project.name %}
-        <ul class="medialist">
-          {% for media in filtered_media %}
+        <div class="project">
+            <h2>{{ project.name }}</h2>
+            <h3>{{ project.type }}</h3>
+            <h5>{{ project.description }}</h5>
+            {{ project.content }}
+          <!--match images-->
+          {% assign filtered_media = site.data.mediafiles | where:"project", project.name %}
+          <ul class="medialist">
+            {% for media in filtered_media %}
 
-            {% if media.mediafiles != 404 %}
+              {% if media.mediafiles != 404 %}
 
-                {% if media.path %}<li><img src="{{ site.portfolio-path}}/{{ media.project }}/{{ media.path }}" alt="{{media.title}}" /></li>{% endif %}
+                  {% if media.path %}<li><img src="{{ site.portfolio-path}}/{{ media.project }}/{{ media.path }}" alt="{{media.title}}" /></li>{% endif %}
 
-            {% endif %}
+              {% endif %}
 
+          {% endfor %}
+          </ul>
+          <!--//match images-->
+          </div>
         {% endfor %}
-        </ul>
-        <!--//match images-->
-        </div>
-      {% endfor %}
-
+      </div>
+  </div>
     {% include footer.html %}
 
 </body>

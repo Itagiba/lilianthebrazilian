@@ -3,7 +3,7 @@ title: My work
 layout: work
 ---
 
-# THIS IS A WORK PAGE
+#  MY MAIN WORK PAGE TITLE IS THIS
 
 
-Design Sprint Prototypes should stand on their own as a product vision, we should call them PILOT PRODUCTS. 
+Design Sprint Prototypes should stand on their own as a product vision, we should call them PILOT PRODUCTS.
