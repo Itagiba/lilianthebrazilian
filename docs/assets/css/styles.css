@@ -64,6 +64,12 @@
   src: url("../fonts/Aldrich/Aldrich-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Aldrich/Aldrich-Regular.woff") format("woff"), url("../fonts/Aldrich/Aldrich-Regular.ttf") format("truetype"), url("../fonts/Aldrich/Aldrich-Regular.svgAldrich") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: "Patrick Hand SC";
+  src: url("../fonts/Patrick_Hand/PatrickHand-Regular.eot");
+  src: url("../fonts/Patrick_Hand/PatrickHand-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Patrick_Hand/PatrickHand-Regular.woff") format("woff"), url("../fonts/Patrick_Hand/PatrickHand-Regular.ttf") format("truetype"), url("../fonts/Patrick_Hand/PatrickHand-Regular.svgPatrick Hand SC") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /*
 	Forty by HTML5 UP
 	html5up.net | @ajlkn
@@ -1908,12 +1914,11 @@ button,
   -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
   background-color: transparent;
-  border: 0;
-  border-radius: 0;
   box-shadow: inset 0 0 0 2px #ffffff;
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
+  font-family: 'Patrick Hand SC', cursive;
   font-size: 0.8em;
   font-weight: 600;
   height: 3.5em;
@@ -1923,7 +1928,9 @@ button,
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  white-space: nowrap; }
+  white-space: nowrap;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; }
   input[type="submit"]:hover, input[type="submit"]:active,
   input[type="reset"]:hover,
   input[type="reset"]:active,
@@ -2073,6 +2080,83 @@ button,
     pointer-events: none;
     cursor: default;
     opacity: 0.25; }
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover,
+  button:hover,
+  .button:hover {
+    box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3); }
+  input[type="submit"].lined.thick,
+  input[type="reset"].lined.thick,
+  input[type="button"].lined.thick,
+  button.lined.thick,
+  .button.lined.thick {
+    border: solid 7px #41403E; }
+  input[type="submit"].dotted.thick,
+  input[type="reset"].dotted.thick,
+  input[type="button"].dotted.thick,
+  button.dotted.thick,
+  .button.dotted.thick {
+    border: dotted 5px #41403E; }
+  input[type="submit"].dashed.thick,
+  input[type="reset"].dashed.thick,
+  input[type="button"].dashed.thick,
+  button.dashed.thick,
+  .button.dashed.thick {
+    border: dashed 5px #41403E; }
+  input[type="submit"].lined.thin,
+  input[type="reset"].lined.thin,
+  input[type="button"].lined.thin,
+  button.lined.thin,
+  .button.lined.thin {
+    border: solid 2px #41403E; }
+  input[type="submit"].dotted.thin,
+  input[type="reset"].dotted.thin,
+  input[type="button"].dotted.thin,
+  button.dotted.thin,
+  .button.dotted.thin {
+    border: dotted 2px #41403E; }
+  input[type="submit"].dashed.thin,
+  input[type="reset"].dashed.thin,
+  input[type="button"].dashed.thin,
+  button.dashed.thin,
+  .button.dashed.thin {
+    border: dashed 2px #41403E; }
+
+button {
+  align-self: center;
+  font-family: 'Patrick Hand SC', cursive;
+  background: transparent;
+  padding: 1rem 1rem;
+  margin: 0 1rem;
+  transition: all .5s ease;
+  color: #41403E;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  /*
+  Above is shorthand for:
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius:15px 255px;
+  */ }
+  button:hover {
+    box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3); }
+  button.lined.thick {
+    border: solid 7px #41403E; }
+  button.dotted.thick {
+    border: dotted 5px #41403E; }
+  button.dashed.thick {
+    border: dashed 5px #41403E; }
+  button.lined.thin {
+    border: solid 2px #41403E; }
+  button.dotted.thin {
+    border: dotted 2px #41403E; }
+  button.dashed.thin {
+    border: dashed 2px #41403E; }
 
 /* Tiles */
 .tiles {
@@ -2918,12 +3002,16 @@ body.is-menu-visible #menu {
     opacity: 1;
     visibility: visible; }
 
-h1, .titles, .actions a {
+h1 {
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: bold; }
+
+h2, h3 {
   font-family: 'Cabin Sketch', cursive;
   font-weight: normal; }
 
-h2, h3 {
-  font-family: 'Aldrich', sans-serif; }
+.titles, .actions a, label {
+  font-family: 'Patrick Hand SC', cursive; }
 
 #header {
   height: auto; }
@@ -2932,11 +3020,6 @@ h2, h3 {
 
 #banner {
   background-image: url(https://res.cloudinary.com/cheekybrazilian/image/upload/v1549141443/maverick-ux/header.jpg); }
-
-.fake-h2 {
-  font-size: 4em;
-  color: red;
-  font-weight: 700; }
 
 .dontshow {
   display: none !important; }

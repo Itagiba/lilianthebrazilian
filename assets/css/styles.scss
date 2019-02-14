@@ -8,13 +8,18 @@
 
 
 
-h1,.titles, .actions a{
+h1{
+  font-family: 'Cabin Sketch', cursive;
+  font-weight:bold;
+}
+
+h2, h3{
   font-family: 'Cabin Sketch', cursive;
   font-weight:normal;
 }
 
-h2, h3{
-  font-family: 'Aldrich', sans-serif;
+.titles, .actions a, label{
+  font-family: 'Patrick Hand SC', cursive;
 }
 
 #header{
@@ -33,11 +38,7 @@ h2, h3{
 
 
 
-.fake-h2{
-  font-size:4em;
-  color:red;
-  font-weight: 700;
-}
+
 
 //unique classes
 
