@@ -17,10 +17,21 @@ h2, h3{
   font-family: 'Aldrich', sans-serif;
 }
 
+#header{
+
+  height:auto;
+  &:after{
+    background-color: _palette(fg-bold);
+  }
+}
+
 
 #banner{
   background-image:url(https://res.cloudinary.com/cheekybrazilian/image/upload/v1549141443/maverick-ux/header.jpg);
+
 }
+
+
 
 .fake-h2{
   font-size:4em;
@@ -28,7 +39,11 @@ h2, h3{
   font-weight: 700;
 }
 
+//unique classes
 
+.dontshow{
+  display:none!important;
+}
 //markdown styles
 
 .medialist{
