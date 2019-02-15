@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="66px" viewBox="0 0 66 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>burger</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Artboard" transform="translate(-57.000000, -337.000000)" stroke="#000000" stroke-width="5">
+            <g id="burger" transform="translate(60.000000, 340.000000)">
+                <path d="M2,0 C21.3550348,1.37986252 40.6474978,-0.501179298 60,1.13207547" id="Path-9" transform="translate(31.000000, 0.566038) scale(1, -1) translate(-31.000000, -0.566038) "></path>
+                <path d="M2,28.1677338 C24.826916,28.5865277 38.058676,28.7961783 60,28.0564586" id="Path-11"></path>
+                <path d="M0,57.7358491 C17.6783735,62.1262038 44.2071497,58.7191113 58,59.0536266" id="Path-10"></path>
+            </g>
+        </g>
+    </g>
+</svg>

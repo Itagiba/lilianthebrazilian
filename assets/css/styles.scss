@@ -10,7 +10,8 @@
 
 h1{
   font-family: 'Cabin Sketch', cursive;
-  font-weight:bold;
+  font-weight:normal;
+  font-size:2.5em;
 }
 
 h2, h3{
@@ -18,7 +19,7 @@ h2, h3{
   font-weight:normal;
 }
 
-.titles, .actions a, label{
+.titles, .actions a, label, ul.links{
   font-family: 'Patrick Hand SC', cursive;
 }
 
@@ -83,3 +84,56 @@ h2, h3{
 
   }
 }
+
+
+//columns
+
+.three-cols {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+
+  a, h1, nav{
+    vertical-align:text-bottom;
+    flex:1;
+
+  }
+
+
+}
+
+
+  h1.pagetitle{
+    height:inherit;
+    vertical-align: middle;
+    text-align:center;
+    padding-top:1.5em;
+    color: _palette(black);
+    font-weight:bold;
+    font-size: 3em;
+
+    span{
+      display: block;
+      vertical-align: middle;
+    }
+  }
+
+  .reveal{
+    h1{
+      color: _palette(black);
+    }
+
+    nav{
+
+      &[href="#menu"] {
+
+
+
+        &:before, &:after {
+          border:1px solid blue;
+          background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32" preserveAspectRatio="none"><style>line { stroke-width: 2px; stroke:#{_palette(black)}; }</style><line x1="0" y1="11" x2="24" y2="11" /><line x1="0" y1="21" x2="24" y2="21" /><line x1="0" y1="16" x2="24" y2="16" /></svg>')!important;
+
+        }
+      }
+    }
+  }
