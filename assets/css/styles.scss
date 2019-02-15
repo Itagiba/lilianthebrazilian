@@ -88,17 +88,88 @@ h2, h3{
 
 //columns
 
-.three-cols {
-  display: flex;
+.row {
+  display:flex;
+  flex-wrap: wrap;
+  background-color: yellow;
   justify-content: space-between;
-  flex-flow: row wrap;
+  width: 100%;
 
-  a, h1, nav{
-    vertical-align:text-bottom;
-    flex:1;
+}
+
+.column {
+  display:flex;
+  min-width: 40%;
+}
+
+.logo{
+
+}
+
+
+#header{
+
+  @include breakpoint(medium) {
+
+
+
+    .burger{
+
+      height:32px;
+      width:100%;
+
+      a {
+        width: 100%;
+
+        &:before, &:after {
+          left:50%;
+        }
+      }
+    }
+
+    .logo{
+      img{
+      }
+    }
+
 
   }
 
+  @include breakpoint(small) {
+
+    .burger{
+      height:32px;
+      width:100%;
+
+      a {
+        width: 100%;
+
+        &:before, &:after {
+          left:50%;
+        }
+      }
+
+
+    }
+
+  }
+
+  @include breakpoint(xsmall) {
+
+    .burger{
+      height:32px;
+      width:100%;
+
+      a {
+        &:before, &:after {
+          left:50%;
+        }
+      }
+
+
+    }
+
+  }
 
 }
 
@@ -107,7 +178,7 @@ h2, h3{
     height:inherit;
     vertical-align: middle;
     text-align:center;
-    padding-top:1.5em;
+    margin-top:3em;
     color: _palette(black);
     font-weight:bold;
     font-size: 3em;
