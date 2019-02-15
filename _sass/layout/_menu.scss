@@ -7,6 +7,7 @@
   justify-content: space-between;
   padding: 1em;
 
+
 }
 
 .menu {
@@ -33,14 +34,14 @@
 }
 
 #menu-toggle {
-  display: none;
+  display: none!important;
 }
 
 .menu-button,
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: _palette(fg-bold);
+  background-color: _palette(fg);
   position: absolute;
   height: 4px;
   width: 30px;
@@ -89,7 +90,9 @@
     background-color: _palette(fg-bold);
   }
 
-
+  #menu-toggle {
+    visibility: hidden;
+  }
 
   #menu-toggle ~ .menu li {
 

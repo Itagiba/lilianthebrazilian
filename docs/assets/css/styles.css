@@ -1539,161 +1539,149 @@ form {
       padding: 0; }
       form .field.half.first {
         padding: 0; } }
-
-label {
-  color: #03008B;
-  display: block;
-  font-size: 0.8em;
-  font-weight: 600;
-  letter-spacing: 0.25em;
-  margin: 0 0 1em 0;
-  text-transform: uppercase; }
-
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-select,
-textarea {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background: rgba(212, 212, 255, 0.035);
-  border: none;
-  border-radius: 0;
-  color: inherit;
-  display: block;
-  outline: 0;
-  padding: 0 1em;
-  text-decoration: none;
-  width: 100%; }
-  input[type="text"]:invalid,
-  input[type="password"]:invalid,
-  input[type="email"]:invalid,
-  input[type="tel"]:invalid,
-  select:invalid,
-  textarea:invalid {
-    box-shadow: none; }
-  input[type="text"]:focus,
-  input[type="password"]:focus,
-  input[type="email"]:focus,
-  input[type="tel"]:focus,
-  select:focus,
-  textarea:focus {
-    border-color: #8F4B92;
-    box-shadow: 0 0 0 2px #8F4B92; }
-
-.select-wrapper {
-  text-decoration: none;
-  display: block;
-  position: relative; }
-  .select-wrapper:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none !important; }
-  .select-wrapper:before {
-    color: rgba(212, 212, 255, 0.1);
-    content: '\f078';
+  form label {
+    color: #03008B;
     display: block;
-    height: 2.75em;
-    line-height: 2.75em;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 2.75em; }
-  .select-wrapper select::-ms-expand {
-    display: none; }
-
-input[type="text"],
-input[type="password"],
-input[type="email"],
-select {
-  height: 2.75em; }
-
-textarea {
-  padding: 0.75em 1em; }
-
-input[type="checkbox"],
-input[type="radio"] {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  display: block;
-  float: left;
-  margin-right: -2em;
-  opacity: 0;
-  width: 1em;
-  z-index: -1; }
-  input[type="checkbox"] + label,
-  input[type="radio"] + label {
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase; }
+  form input[type="text"],
+  form input[type="password"],
+  form input[type="email"],
+  form input[type="tel"],
+  form select,
+  form textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: rgba(212, 212, 255, 0.035);
+    border: none;
+    border-radius: 0;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
     text-decoration: none;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 300;
-    padding-left: 2.65em;
-    padding-right: 0.75em;
+    width: 100%; }
+    form input[type="text"]:invalid,
+    form input[type="password"]:invalid,
+    form input[type="email"]:invalid,
+    form input[type="tel"]:invalid,
+    form select:invalid,
+    form textarea:invalid {
+      box-shadow: none; }
+    form input[type="text"]:focus,
+    form input[type="password"]:focus,
+    form input[type="email"]:focus,
+    form input[type="tel"]:focus,
+    form select:focus,
+    form textarea:focus {
+      border-color: #8F4B92;
+      box-shadow: 0 0 0 2px #8F4B92; }
+  form .select-wrapper {
+    text-decoration: none;
+    display: block;
     position: relative; }
-    input[type="checkbox"] + label:before,
-    input[type="radio"] + label:before {
+    form .select-wrapper:before {
       -moz-osx-font-smoothing: grayscale;
       -webkit-font-smoothing: antialiased;
       font-family: FontAwesome;
       font-style: normal;
       font-weight: normal;
       text-transform: none !important; }
-    input[type="checkbox"] + label:before,
-    input[type="radio"] + label:before {
-      background: rgba(212, 212, 255, 0.035);
-      content: '';
-      display: inline-block;
-      height: 1.65em;
-      left: 0;
-      letter-spacing: 0;
-      line-height: 1.58125em;
+    form .select-wrapper:before {
+      color: rgba(212, 212, 255, 0.1);
+      content: '\f078';
+      display: block;
+      height: 2.75em;
+      line-height: 2.75em;
+      pointer-events: none;
       position: absolute;
+      right: 0;
       text-align: center;
       top: 0;
-      width: 1.65em; }
-  input[type="checkbox"]:checked + label:before,
-  input[type="radio"]:checked + label:before {
-    background: #03008B;
-    border-color: #8F4B92;
-    content: '\f00c';
-    color: #FFFFFF; }
-  input[type="checkbox"]:focus + label:before,
-  input[type="radio"]:focus + label:before {
-    box-shadow: 0 0 0 2px #8F4B92; }
-
-input[type="radio"] + label:before {
-  border-radius: 100%; }
-
-::-webkit-input-placeholder {
-  color: rgba(244, 244, 255, 0.2) !important;
-  opacity: 1.0; }
-
-:-moz-placeholder {
-  color: rgba(244, 244, 255, 0.2) !important;
-  opacity: 1.0; }
-
-::-moz-placeholder {
-  color: rgba(244, 244, 255, 0.2) !important;
-  opacity: 1.0; }
-
-:-ms-input-placeholder {
-  color: rgba(244, 244, 255, 0.2) !important;
-  opacity: 1.0; }
-
-.formerize-placeholder {
-  color: rgba(244, 244, 255, 0.2) !important;
-  opacity: 1.0; }
+      width: 2.75em; }
+    form .select-wrapper select::-ms-expand {
+      display: none; }
+  form input[type="text"],
+  form input[type="password"],
+  form input[type="email"],
+  form select {
+    height: 2.75em; }
+  form textarea {
+    padding: 0.75em 1em; }
+  form input[type="checkbox"],
+  form input[type="radio"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    display: block;
+    float: left;
+    margin-right: -2em;
+    opacity: 0;
+    width: 1em;
+    z-index: -1; }
+    form input[type="checkbox"] + label,
+    form input[type="radio"] + label {
+      text-decoration: none;
+      color: #ffffff;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 300;
+      padding-left: 2.65em;
+      padding-right: 0.75em;
+      position: relative; }
+      form input[type="checkbox"] + label:before,
+      form input[type="radio"] + label:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important; }
+      form input[type="checkbox"] + label:before,
+      form input[type="radio"] + label:before {
+        background: rgba(212, 212, 255, 0.035);
+        content: '';
+        display: inline-block;
+        height: 1.65em;
+        left: 0;
+        letter-spacing: 0;
+        line-height: 1.58125em;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 1.65em; }
+    form input[type="checkbox"]:checked + label:before,
+    form input[type="radio"]:checked + label:before {
+      background: #03008B;
+      border-color: #8F4B92;
+      content: '\f00c';
+      color: #FFFFFF; }
+    form input[type="checkbox"]:focus + label:before,
+    form input[type="radio"]:focus + label:before {
+      box-shadow: 0 0 0 2px #8F4B92; }
+  form input[type="radio"] + label:before {
+    border-radius: 100%; }
+  form ::-webkit-input-placeholder {
+    color: rgba(244, 244, 255, 0.2) !important;
+    opacity: 1.0; }
+  form :-moz-placeholder {
+    color: rgba(244, 244, 255, 0.2) !important;
+    opacity: 1.0; }
+  form ::-moz-placeholder {
+    color: rgba(244, 244, 255, 0.2) !important;
+    opacity: 1.0; }
+  form :-ms-input-placeholder {
+    color: rgba(244, 244, 255, 0.2) !important;
+    opacity: 1.0; }
+  form .formerize-placeholder {
+    color: rgba(244, 244, 255, 0.2) !important;
+    opacity: 1.0; }
 
 /* Box */
 .box {
@@ -2594,7 +2582,7 @@ button {
     -webkit-animation: none;
     -ms-animation: none;
     animation: none;
-    background-color: transparent;
+    background-color: cornflowerblue;
     box-shadow: none;
     position: absolute; }
     #header.alt.style1 .logo strong {
@@ -2945,13 +2933,13 @@ button {
   align-items: center; }
 
 #menu-toggle {
-  display: none; }
+  display: none !important; }
 
 .menu-button,
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #03008B;
+  background-color: #ffffff;
   position: absolute;
   height: 4px;
   width: 30px;
@@ -2992,6 +2980,9 @@ button {
     justify-content: center;
     align-items: center;
     background-color: #03008B; }
+
+  #menu-toggle {
+    visibility: hidden; }
 
   #menu-toggle ~ .menu li {
     height: 0;

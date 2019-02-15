@@ -58,7 +58,7 @@
 				}
 			}
 		}
-	}
+
 
 	label {
 		color: _palette(fg-bold);
@@ -131,7 +131,7 @@
 	textarea {
 		padding: 0.75em 1em;
 	}
-
+	///==[problems with checkbox display]
 	input[type="checkbox"],
 	input[type="radio"], {
 		@include vendor('appearance', 'none');
@@ -183,6 +183,8 @@
 		}
 	}
 
+	///==[problems with checkbox display]
+
 	input[type="checkbox"] {
 		& + label {
 			&:before {
@@ -221,4 +223,6 @@
 	.formerize-placeholder {
 		color: _palette(fg-light) !important;
 		opacity: 1.0;
+	}
+
 	}
