@@ -2,36 +2,30 @@
 <div id="wrapper">
 
 <!-- Header -->
-<header id="header" {% if page.layout == "landing" %} class="alt style2 row"{% endif %}{% if page.layout == "home" %} class="alt row"{% endif %}>
-	<a  href="{{ "" | relative_url }}/" class="logo column"><img src="{{ site.baseurl }}/assets/images/pds-09.png" alt="" /><strong class="dontshow">{{ site.title }}</strong> <span  class="dontshow"> {{ site.subtitle }}</span></a>
+<header id="header" {% if page.layout == "landing" %} class="alt style2 top-nav"{% endif %}{% if page.layout == "home" %} class="alt top-nav"{% endif %}>
+	<a  href="{{ "" | relative_url }}/" class="logo"><img src="{{ site.baseurl }}/assets/images/pds-09.png" alt="" /><strong class="dontshow">{{ site.title }}</strong> <span  class="dontshow"> {{ site.subtitle }}</span></a>
 
 
 
-	<nav class="column burger">
-		<a href="#menu"></a>
-	</nav>
+	<input id="menu-toggle" type="checkbox" />
+	    <label class='menu-button-container' for="menu-toggle">
+	    <div class='menu-button'></div>
+	  </label>
+
+		<!-- Menu -->
+			<ul  class="menu">
+		        {% for page in site.pages %}
+				    {% if page.layout == "home" %}
+				        <li><a href="{{ "" | relative_url }}/">{{ page.title }}</a></li>
+			    	{% endif %}
+				{% endfor %}
+				{% for page in site.pages %}
+				    {% if page.layout != "home" and page.nav-menu == true %}
+				        <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+				    {% endif %}
+				{% endfor %}
+			</ul>
 </header>
 
 
 <h1 class="pagetitle"><span>{{ page.title }}</span></h1>
-
-
-
-<!-- Menu -->
-<nav id="menu">
-	<ul class="links">
-        {% for page in site.pages %}
-		    {% if page.layout == "home" %}
-		        <li><a href="{{ "" | relative_url }}/">{{ page.title }}</a></li>
-	    	{% endif %}
-		{% endfor %}
-		{% for page in site.pages %}
-		    {% if page.layout != "home" and page.nav-menu == true %}
-		        <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
-		    {% endif %}
-		{% endfor %}
-	</ul>
-	<ul class="actions vertical">
-		<li><a href="#" class="button special fit lined thin">return to page</a></li>
-	</ul>
-</nav>

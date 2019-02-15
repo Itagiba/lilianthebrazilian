@@ -135,7 +135,6 @@
 	input[type="checkbox"],
 	input[type="radio"], {
 		@include vendor('appearance', 'none');
-		display: block;
 		float: left;
 		margin-right: -2em;
 		opacity: 0;
@@ -146,7 +145,6 @@
 			@include icon;
 			color: _palette(fg);
 			cursor: pointer;
-			display: inline-block;
 			font-weight: _font(weight);
 			padding-left: (_size(element-height) * 0.6) + 1em;
 			padding-right: 0.75em;
