@@ -1625,6 +1625,7 @@ input[type="radio"] {
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
+  display: block;
   float: left;
   margin-right: -2em;
   opacity: 0;
@@ -1635,6 +1636,7 @@ input[type="radio"] {
     text-decoration: none;
     color: #ffffff;
     cursor: pointer;
+    display: inline-block;
     font-weight: 300;
     padding-left: 2.65em;
     padding-right: 0.75em;
@@ -2934,7 +2936,7 @@ button {
   margin: 0 1rem; }
 
 .menu-button-container {
-  display: none;
+  display: none !important;
   height: 100%;
   width: 30px;
   cursor: pointer;
@@ -2943,7 +2945,7 @@ button {
   align-items: center; }
 
 #menu-toggle {
-  display: none !important; }
+  display: none; }
 
 .menu-button,
 .menu-button::before,
@@ -2977,7 +2979,8 @@ button {
 
 @media (max-width: 700px) {
   .menu-button-container {
-    display: flex; }
+    display: flex !important;
+    z-index: 50; }
 
   .menu {
     position: absolute;

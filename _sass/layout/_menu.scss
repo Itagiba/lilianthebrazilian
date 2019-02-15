@@ -23,7 +23,7 @@
 }
 
 .menu-button-container {
-  display: none;
+  display: none!important;
   height: 100%;
   width: 30px;
   cursor: pointer;
@@ -33,7 +33,7 @@
 }
 
 #menu-toggle {
-  display: none!important;
+  display: none;
 }
 
 .menu-button,
@@ -74,7 +74,8 @@
 
 @media (max-width: 700px) {
   .menu-button-container {
-    display: flex;
+    display: flex!important;
+    z-index:50;
   }
   .menu {
     position: absolute;
@@ -87,7 +88,11 @@
     align-items: center;
     background-color: _palette(fg-bold);
   }
+
+
+
   #menu-toggle ~ .menu li {
+
     height: 0;
     margin: 0;
     padding: 0;
