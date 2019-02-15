@@ -6,23 +6,46 @@
 
 /* Banner */
 
+.home{
+	position:relative;
+	margin:0;
+	padding:0;}
+
+.home{
+
+	#banner{
+		@include vendor('background-image', 'url("https://res.cloudinary.com/cheekybrazilian/image/upload/v1549141443/maverick-ux/header.jpg")');
+
+		.inner{
+			margin-top:$header-height;
+		}
+
+	}
+
+
+
+	#main{
+		margin-top:0;
+	}
+}
+
+
 	#banner {
 		@include vendor('align-items', 'center');
-		@include vendor('background-image', 'url("../images/banner.jpg")');
 		@include vendor('display', 'flex');
 		@include padding(4em, 0, (2em, 0, 0, 0));
 		background-attachment: fixed;
-		background-position: center;
+		background-position: center 0px;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
 		height: 60vh;
-		margin-bottom: -3.25em;
+		margin-bottom: 0;
 		max-height: 32em;
 		min-height: 22em;
 		position: relative;
-		top: -3.25em;
+		top: 0;
 
 		&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
@@ -33,9 +56,9 @@
 			display: block;
 			height: 100%;
 			left: 0;
+			top:0;
 			opacity: 0.85;
 			position: absolute;
-			top: 0;
 			width: 100%;
 			z-index: 1;
 		}

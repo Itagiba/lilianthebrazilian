@@ -8,6 +8,7 @@
 
 	#main {
 		background-color: _palette(bg-alt);
+		margin-top:$header-height;
 
 		> * {
 			border-top: solid 1px _palette(border);

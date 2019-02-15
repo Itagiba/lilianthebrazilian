@@ -26,6 +26,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-right:2em;
     }
 
     #menu-toggle {
@@ -36,7 +37,7 @@
     .menu-button::before,
     .menu-button::after {
       display: block;
-      background-color: _palette(fg);
+      background-color: _palette(black);
       position: absolute;
       height: 4px;
       width: 30px;
@@ -80,7 +81,7 @@
         @include vendor('align-items', 'center');
         position: absolute;
         top: 0;
-        margin-top: 200px;
+        margin-top: $header-height;
         left: 0;
         width: 100%;
         background-color: _palette(fg-bold);

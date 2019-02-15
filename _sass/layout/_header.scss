@@ -16,10 +16,10 @@
 		@include vendor('flex-direction', 'row');
 		@include vendor('justify-content', 'space-between');
 		@include vendor('align-items', 'center');
-		background-color: _palette(accent4);
+		background-color: _palette(fg);
 		box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.15);
 		cursor: default;
-		min-height: 180px;
+		max-height: $header-height;
 		left: 0;
 		margin: 0;
 		position: fixed;
@@ -61,7 +61,7 @@
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.75s');
 			@include vendor('animation', 'none');
-			background-color: cornflowerblue;
+			background-color: transparent;
 			box-shadow: none;
 			position: absolute;
 
