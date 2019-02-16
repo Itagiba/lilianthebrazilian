@@ -11,6 +11,10 @@
       z-index: _misc(z-index-mid);
       text-transform: uppercase;
 
+      li{
+        padding:0.5em 1em;
+      }
+
 
       a{
         border:0;
@@ -84,8 +88,7 @@
         margin-top: $header-height;
         left: 0;
         width: 100%;
-        background-color: _palette(fg-bold);
-        padding:0 2em;
+        background-color: _palette(fg);
       }
 
 
@@ -101,20 +104,27 @@
       }
       #menu-toggle:checked ~ .menu li {
         height: 2.5em;
-        padding:0.5em 0;
+        padding:0.5em 2em;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-        border-bottom:dotted 2px #41403E;
+
+
+          a {
+          display:block;
+          border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+          border-bottom:dotted 2px #41403E;
+
+        }
 
 
       }
       .menu > li {
         display: flex;
-        justify-content: center;
+        justify-content:flex-end;
         margin: 0;
-        padding: 0 0;
+        padding:0;
         width: 100%;
-        color: _palette(fg);
+        color: _palette(fg-black);
+        font-weight:bold;
 
 
       }

@@ -1,5 +1,6 @@
 ---
 title: About
+image: assets/images/pic05.jpg
 ---
 
 # About page

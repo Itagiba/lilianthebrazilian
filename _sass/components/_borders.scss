@@ -1,17 +1,22 @@
 
  button{
       align-self:center;
-      font-family: 'Patrick Hand SC', cursive;
       background:transparent;
-      padding:1rem 1rem;
-      margin:0 1rem;
-      transition:all .5s ease;
-      color:#41403E;
+      color: _palette(black);
       font-size:2rem;
       letter-spacing:1px;
       outline:none;
-      box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
-      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    }
+
+ button, textarea, input[type="text"]{
+
+
+   padding:1rem 1rem;
+   margin:0 1rem;
+   transition:all .5s ease;
+
+  font-family: 'Patrick Hand SC', cursive;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
       /*
       Above is shorthand for:
       border-top-left-radius: 255px 15px;
@@ -23,22 +28,22 @@
          box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
       }
       &.lined.thick{
-         border:solid 7px #41403E;
+         border:solid 7px  _palette(black);
       }
       &.dotted.thick{
-         border:dotted 5px #41403E;
+         border:dotted 5px  _palette(black);
       }
       &.dashed.thick{
-        border:dashed 5px #41403E;
+        border:dashed 5px  _palette(black);
       }
        &.lined.thin{
-         border:solid 2px #41403E;
+         border:solid 2px  _palette(black);
       }
       &.dotted.thin{
-         border:dotted 2px #41403E;
+         border:dotted 2px  _palette(black);
       }
       &.dashed.thin{
-        border:dashed 2px #41403E;
+        border:dashed 2px  _palette(black);
       }
     }
 

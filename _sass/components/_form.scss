@@ -70,6 +70,7 @@
 		text-transform: uppercase;
 	}
 
+
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
@@ -78,8 +79,6 @@
 	textarea {
 		@include vendor('appearance', 'none');
 		background: _palette(border-bg);
-		border: none;
-		border-radius: 0;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -130,6 +129,10 @@
 
 	textarea {
 		padding: 0.75em 1em;
+	}
+
+	textarea, input[type="text"] {
+		background-color:_palette(bg);
 	}
 	///==[problems with checkbox display]
 	input[type="checkbox"],
