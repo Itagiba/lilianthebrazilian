@@ -28,13 +28,9 @@ tiles-count: 6
 # image bank
 image-path: "https://res.cloudinary.com/cheekybrazilian/image/upload/v1548967311/maverick-ux"
 portfolio-path: "https://res.cloudinary.com/cheekybrazilian/image/upload/v1549398214/maverick-ux/portfolio/"
+process-path: "https://res.cloudinary.com/cheekybrazilian/image/upload/v1549398214/maverick-ux/process/"
 
 defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
   - scope:
       path: ""
       type: "posts"
@@ -48,6 +44,10 @@ defaults:
       path: "/work"
     values:
       layout: work
+  - scope:
+      path: "/process"
+    values:
+      layout: process
 
 
 
