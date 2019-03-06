@@ -1,6 +1,7 @@
 ---
 title: My Process
 layout: process
+nav-menu: true
 ---
 
 #  THIS IS MY FANTASTIC PROCESS

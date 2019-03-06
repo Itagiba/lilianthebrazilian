@@ -1,6 +1,7 @@
 ---
 title: My work
 layout: work
+nav-menu: true
 ---
 
 #  MY MAIN WORK PAGE TITLE IS THIS
