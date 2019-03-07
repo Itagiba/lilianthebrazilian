@@ -8,5 +8,17 @@
   description: Identify the journey map through the main user's key journey steps through to reaching the desired outcome.
   path: 03-map.png
 - title: Imagine
-  description: With a positive solution focused approach, explore multiple ways to tackle the problem. What is the best outcome for user and business?
+  description: Ideation, innovation, how could we reach the goal in the best case scenario, no matter how idealistic.
   path: 04-imagine.png
+- title: Define
+  description: With the problem in mind, explore multiple positive ways to create a solution that is beneficial for user and business
+  path: 05-define.png
+- title: Present
+  description: Put the final vision in front of stakeholders with key moments and features in a clear storyboard format
+  path: 06-present.png
+- title: Refine
+  description: Create a high fidelity interactive prototype to see the vision at work in the real world
+  path: 07-prototype.png
+- title: Test
+  description: Get real users to take your vision for a spin and to validate our assumptions and reinforce the scope's approval
+  path: 08-test.png

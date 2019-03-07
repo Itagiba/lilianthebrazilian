@@ -146,3 +146,74 @@
 			margin-left: _size(element-margin);
 		}
 	}
+
+
+/*process panels*/
+dl.process{
+	display: flex;
+	flex-flow:wrap;
+	counter-reset: section;
+	padding:0;
+	margin:0;
+
+	dt::before {
+	  counter-increment: section;
+	  font-size:1.2em;
+		color: _palette(black);
+	  content: counters(section,"")". ";
+		position:absolute;
+		left:0.5em;
+		top:0.2em;
+	}
+
+		dt {
+		 background-image:url(https://res.cloudinary.com/cheekybrazilian/image/upload/v1551926084/maverick-ux/process/00-frame.png);
+		 background-repeat:no-repeat;
+		 height:200px;
+		 width:200px;
+		 background-size:contain;
+		 text-align: right;
+		 color: #fff;
+ 		 position:relative;
+		 padding:0;
+		 margin:1.5em;
+
+		 img, span{
+			 display:block;
+			 position:absolute;
+
+		 }
+
+
+		 img{
+			 max-width: 200px;
+			 max-height:200px;
+			 top:0;
+		 }
+
+		 span{
+			 bottom:0.1em;
+			 left:0.5em;
+			 text-transform: uppercase;
+			 font-size: 1.5em;
+			 font-weight: normal;
+			 z-index: 1000;
+		 }
+
+
+	 }
+	 dd{
+		 margin: 0;
+		 flex-basis: 70%;
+
+		 span{
+			 padding:2.5em;
+			 display:block;
+			 font-size:1.2em;
+			 color: _palette(accent2);
+		 }
+	 }
+
+
+
+}

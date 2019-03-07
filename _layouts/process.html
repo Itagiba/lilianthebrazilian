@@ -15,18 +15,17 @@
       	<div class="inner">
 
         {{ content }}
-
+        <dl class="process">
         {% for step in site.data.process %}
-
-        <div class="process">
-            <h2>{{ step.title }}</h2>
-            <h5>{{ step.description }}</h5>
+            <dt>
+              <span>{{ step.title }}</span>
+              <img src="{{ site.process-path}}/{{ step.path }}" alt="{{step.title}}" />
+            </dt>
+            <dd><span>{{ step.description }}</span></dd>
           <!--match images-->
-          <img src="{{ site.process-path}}/{{ step.path }}" alt="{{step.title}}" />
-
           {% endfor %}
           <!--//match images-->
-      </div>
+      </dl>
       </div>
   </div>
     {% include footer.html %}
