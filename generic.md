@@ -2,7 +2,7 @@
 title: Generic
 layout: post
 description: Lorem ipsum dolor est
-image: assets/images/pic11.jpg
+image: winterscape.jpg
 nav-menu: true
 cloud_image: Screenshot_2019-01-30_at_1.40.44_PM.png
 ---

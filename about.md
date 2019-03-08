@@ -1,6 +1,7 @@
 ---
 title: About
-image: assets/images/pic05.jpg
+image: 
+description: This is my about page.
 ---
 
 # About page

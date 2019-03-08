@@ -1,7 +1,7 @@
 ---
 title: Elements
 layout: page
-image: assets/images/pic10.jpg
+image: decision.jpg
 nav-menu: false
 ---
 
